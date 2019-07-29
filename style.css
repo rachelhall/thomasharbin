@@ -1,0 +1,148 @@
+html {
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: Montserrat,sans-serif;
+    letter-spacing: .1em;
+    line-height: 1.5em;
+    font-weight: 100;
+    max-width: 75%;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 75%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    font-family: 'Muli', Helvetica , Arial, sans-serif;
+    color: rgba(245, 245, 245, 0.733);
+    letter-spacing: 1px;
+    font-weight: 100;
+    transition: all ease-in-out .08s;
+    transform: scale(.98);
+}
+
+li:hover {
+    color: white;
+}
+
+
+/* ----------------HEADINGS--------------------- */
+.hero h1 {
+    font: 35px 'Muli', Helvetica , Arial, sans-serif;	
+	margin:0 0 10px 0;
+	padding:0;
+	color: #FFFAFA;
+    font-weight: 100;
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    font: 65px 'Muli', Helvetica , Arial, sans-serif;
+    margin: 0;
+}
+
+h3 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    font: 30px 'Muli', Helvetica , Arial, sans-serif;
+    margin: 0;
+}
+
+h4 {
+    font-weight: 100;
+    letter-spacing: 2px;
+    font: 15px 'Muli', Helvetica , Arial, sans-serif;
+    margin: 0;
+
+}
+
+
+.hero h2 {
+	margin:0 0 5px 0;
+	padding:0;
+	color: #FFFAFA;
+}
+
+.content-heading h2 {
+    font-size: 30px;
+    color: black;
+}
+
+.heading {
+    max-width: 625px;
+    margin: 0 0 0 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 120px 0;
+}
+
+.hero {
+    background-color: #222;
+
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+}
+
+.about {
+    background-color: #FFFAFA;
+}
+
+.portfolio {
+    background-color: #222;
+    padding: 0 80px;
+}
+
+.portfolio h2,h3, h4 {
+    color: #FFFAFA;
+    padding-bottom: 10px;
+}
+
+.items {
+    display: flex;
+}
+.item {
+    padding: 0 50px 0 0;
+    text-align: center;
+    margin: 50px 50px 0 0;
+    transform: scale(.98);
+    transition: all ease .2s;
+}
+
+.item:hover {
+    transform: scale(1);
+}
+
+.emoji {
+    font-size: 50px;
+    margin: 0;
+}
+
+

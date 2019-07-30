@@ -132,12 +132,14 @@ section {
     padding: 0 50px 0 0;
     text-align: center;
     margin: 50px 50px 0 0;
-    transform: scale(.98);
+    transform: scale(.99);
     transition: all ease .2s;
+    opacity: .9;
 }
 
 .item:hover {
     transform: scale(1);
+    opacity: 1;
 }
 
 .emoji {
@@ -151,4 +153,21 @@ section {
     -webkit-box-shadow: 10px 10px 29px -16px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 29px -16px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 29px -16px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1000) {
+    p {
+        font-size: 50px;
+        max-width: 100%;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
 }

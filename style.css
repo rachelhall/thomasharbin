@@ -113,7 +113,7 @@ section {
 }
 
 .about {
-    background-color: #FFFAFA;
+    
 }
 
 .portfolio {
@@ -132,7 +132,6 @@ section {
 }
 .item {
     padding: 0 50px 0 0;
-    text-align: center;
     margin: 50px 50px 0 0;
     transform: scale(.99);
     transition: all ease .2s;
@@ -155,6 +154,40 @@ section {
     -webkit-box-shadow: 10px 10px 29px -16px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 29px -16px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 29px -16px rgba(0,0,0,0.75);
+}
+
+.hidden-paragraph  {
+    max-height: 0;
+    transition: all 0.6s ease;
+    overflow: hidden;
+    
+}
+
+.displayHidden {
+    max-height: 200px;
+    transition: all 0.6s ease;
+}
+
+.jazzChords {
+    border: 2px solid white;
+    min-width: 150px;
+    max-width: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.jazzChords:hover {
+    background-color: rgba(0,0,0,0.75)
+}
+
+.jazzChords h3 {
+    text-align: center;
+    margin: 0;
 }
 
 

@@ -35,6 +35,11 @@
                         <h2 class="content-heading">About</h2>
                         <p>Thomas went from music teacher to tech. After years teaching university music classes, Thomas began revisiting a high school interest in web development and discovered the same type of creative he loved about music abounded in the dev space.</p>
                         <p>Outside of work, Thomas enjoys playing and recording music with friends and skateboarding/rollerblading.</p>
+                        <p class="toggleOpen">Read More...</p>
+
+                        <div class="hidden-paragraph">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
                 </div>     
             </div>
         </div>
@@ -64,6 +69,13 @@
                                      <h4>Professional Portfolio</h4>
                                  </div>
                             </a>
+                            <a href="Jazz-chords.html"><div class="item">
+                                <div class="jazzChords"><h3>Jazz Chords</h3></div>
+                                <h3>Music Theory</h3>
+                                <h4>Practice<br> Tool</h4>
+                                
+                            </div></a>
+                            
                             
                             
 
@@ -74,3 +86,17 @@
 
     </section>
 </body>
+
+<script>
+const toggleOpen = document.querySelector('.toggleOpen');
+toggleOpen.style.cursor = "pointer"
+const hiddenParagraph = document.querySelector('.hidden-paragraph');
+
+function toggleDisplay(e){
+    console.log("hello");
+    hiddenParagraph.classList.toggle('displayHidden')
+
+
+}
+toggleOpen.addEventListener('click', toggleDisplay)
+</script>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <style>
+
+       h1 {
+        color: #222222;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 3em;
+            padding: 0;
+            margin: 0;
+            text-transform: uppercase;
+       }
+       
+        h2 {
+            color: white;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 3em;
+            padding: 0;
+            margin: 0;
+            
+        }
+
+        button {
+            background-color: #333;
+            border: none;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 20px;
+            border-radius: 5px;
+            border: #333 solid 3px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            min-width: 125px;
+        }
+
+        button:hover {
+            background-color: #666;
+            border: black solid 3px;
+        }
+
+         .mast {
+            padding-bottom: 40px;
+        }
+
+        .buttonText {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .chord {
+            width: 300px;
+            height: 150px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px #222;
+
+        }
+
+        .scaleDeg {
+            width: 300px;
+            height: 150px;;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px #222;
+        }
+    </style>
+
+</head>
+
+ <body>
+     <div class="container">
+         <h1 class="mast">Name the chord tone for each new key!</h1>
+         <button class="button" type="button" onclick="refresh(), updateButtonText()"><p class="buttonText">Start</p></button>
+
+         
+         
+         <div class="chord-header">
+             <h1>chord</h1>
+         </div>
+            <div class="chord">
+            </div>
+
+            <div class="tone-header">
+                    <h1>Tone</h1>
+                </div>
+
+            <div class="scaleDeg">
+                
+                
+            </div>
+     </div>
+
+    <script>
+
+        const buttonText = document.querySelector('.buttonText');   
+
+        
+
+        function updateButtonText() {
+            buttonText.innerHTML = "Next";
+        }
+
+        
+        function refresh(){
+            const chords = [
+            'C',
+            'C#',
+            'Db',
+            'D',
+            'Eb',
+            'E',
+            'F',
+            'F#',
+            'Gb',
+            'G',
+            'Ab',
+            'A',
+            'Bb',
+            'B'
+        ];
+
+        const scaleDeg = [
+            '3rd',
+            '5th',
+            'b5',
+            '#5',
+            'maj7',
+            'b7',
+            '9',
+            'b9',
+            '#9',
+            '11',
+            '#11',
+            '13',
+            'b13'
+        ];
+
+            let randomNum1 = Math.floor((Math.random() * 13 + 1));
+            let randomNum2 = Math.floor((Math.random() * 12 + 1));
+
+        const chordP = document.querySelector('.chord');
+        const hasChord = document.querySelector('.chord h2');
+
+        console.log(hasChord);
+        if (hasChord) {
+            hasChord.innerHTML = chords[randomNum1 - 1];
+        } else {
+            const chordH1 = document.createElement('h2');
+            chordH1.innerHTML = chords[randomNum1 - 1];
+            chordP.appendChild(chordH1);
+
+        }
+        
+
+        const scaleDegP = document.querySelector('.scaleDeg');
+        const hasScaleDegP = document.querySelector('.scaleDeg h2')
+        console.log(hasScaleDegP);
+
+        if (hasScaleDegP) {
+            hasScaleDegP.innerHTML = scaleDeg[randomNum2 -1];
+        } else {
+            const scaleDegH1 = document.createElement('h2');
+            scaleDegH1.innerHTML = scaleDeg[randomNum2 -1];
+            scaleDegP.appendChild(scaleDegH1);
+
+        }
+
+
+        
+
+
+
+        
+};
+
+        
+
+        
+
+    </script>
+ </body>

@@ -1,5 +1,6 @@
-html {
-
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -248,6 +249,10 @@ and (max-device-width : 800px)
     p {
         max-width: 100%;
         text-align: left;
+    }
+
+    .jazzChords {
+        transform: translateX(100px);
     }
    
     }
